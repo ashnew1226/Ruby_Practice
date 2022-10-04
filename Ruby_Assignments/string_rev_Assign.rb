@@ -13,4 +13,4 @@ splt.each do|x|
 end
 rev_char=arr1.reverse
 newstrarry =  rev_char.insert(5, arr)
-p newstrarry.join
+puts newstrarry.join

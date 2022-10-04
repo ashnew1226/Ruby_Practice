@@ -40,7 +40,7 @@
 #   stack overflow proc & lambada in ruby
 
 # c = Proc.new {|a, b| puts a**2+b**2 } # => #<Proc:0x3c7d28@(irb):1>
-# c.call 1, 2 # => 5
+# c.call 1, 2 # => 5https://github.com/SohailBadeghar/Django_Blog.git
 # # c.call 1 # => NoMethodError: undefined method `**' for nil:NilClass
 # c.call 2, 3, 4 # => 5
 
@@ -81,7 +81,7 @@
 #   puts batman_ironman_lambda
 
                                 # Proc & Lambadas
-# Lambda checks the arguments passed to it instead the Proc doesnot check the number of arguments passed to it it will define all athers as nil
+# Lambda checks the arguments passed to it instead the Proc doesnot check the number of arguments passed to it it will define all others as nil
 # The Proc respond immediatly so it does not return control to calling method 
 #  The lambada returns the result and get control back to calling method
 

@@ -2,17 +2,18 @@ class Gradechool
     def initialize
     @arr = []
     end
-    $grade
+    $grade = 1
     def studRecords(name,grade)
       @arr << [name, grade] 
 
       # p " arr is : #{@arr}"
     end
 
-    def showRecords
+    def showRecords(*)
         # with or without arguments
-        p " array is : #{@arr}"
-      case grade
+        # p " array is : #{@arr}"
+      
+      case $grade
       when 2
         return @arr.select{|arr| arr[1] == 2}.sort
       when 3
@@ -30,13 +31,13 @@ gradeschool.studRecords("jim11111111",1)
 gradeschool.studRecords("Charlie",2)
 gradeschool.studRecords("jim",1)
 gradeschool.studRecords("Anna",1)
-gradeschool.studRecords("Barb",1)
+gradeschool.studRecords("Barb",1) 
 gradeschool.studRecords("Alex",2)
 gradeschool.studRecords("Peter",2)
 gradeschool.studRecords("Zoe",2)
 gradeschool.studRecords("keron",3)
 gradeschool.studRecords("christoper",3)
 gradeschool.studRecords("christoper",5)
-p gradeschool.showRecords 3
+p gradeschool.showRecords()
 # p "students with grade 2 :"
 # p gradeschool.showRecords(1)

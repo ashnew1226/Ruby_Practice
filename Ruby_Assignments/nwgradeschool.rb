@@ -30,7 +30,7 @@ class Gradeschool
            else
             puts "Invalid Input"
            end
-           puts "Do you want to see more (y/n) "
+           puts "Do you want to see more (y/n) " 
            innerinput = gets.chomp.to_s
            if innerinput=='y'
             puts "Latest enrolled in school"
