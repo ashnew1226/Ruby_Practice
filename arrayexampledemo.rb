@@ -1,17 +1,17 @@
-# arr = [1,[1,2,3,"sss",[4,5]]]
-# 1,1,2,3,sss,[4,5]
-# arr1 = []
-# arr.each do |ele|
-#    if ele.class == Array
-#         ele.each do |num|
-#             arr << num
-#         end 
-#     else
-#         arr1 << ele
-#     end
-# end
+arr = [1,[1,2,3,"sss",[4,5]]]
+arr1 = []
+arr.each do |ele|
+   if ele.class == Array
+        ele.each do |num|
+            arr << num
+        end 
+    else
+        arr1 << ele
+    end
+end
 
-# print arr1
+print arr1
+print arr
 # # print arr
 # print "-----------\n"
 
@@ -30,14 +30,14 @@
 # end
 
 
-puts "-----------------------"
-arr = [1,3,6,nil,nil,1,4,8,3,6,nil]
-print arr
-puts "-----------------------"
-print arr.compact!
-puts "-----------------------"
-print arr
-puts "-----------------------"
+# puts "-----------------------"
+# arr = [1,3,6,nil,nil,1,4,8,3,6,nil]
+# print arr
+# puts "-----------------------"
+# print arr.compact!
+# puts "-----------------------"
+# print arr
+# puts "-----------------------"
 # if a.include?(",")
 #     a.delete!(",")
 # end 

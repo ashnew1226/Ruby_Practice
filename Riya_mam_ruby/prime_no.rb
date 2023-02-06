@@ -5,7 +5,6 @@ class Prime
             unless (n%i !=0)
                 
             end
-                
         end
         if flag==true
             puts "number #{n} is not prime"
@@ -18,4 +17,4 @@ class Prime
     
 end
 obj = Prime.new
-obj.primeno(11)
+obj.primeno(25)

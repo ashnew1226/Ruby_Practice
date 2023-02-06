@@ -46,11 +46,20 @@
 # car  = Cars.new
 # car.carDemo{puts carname}
 
-def call_twice
-    puts "this is first block"
-    yield
-    puts "this is second block"
-end
-call_twice{
-    puts "this is the new twice statement"
-}
+# def call_twice
+#     puts "this is first block"
+#     yield
+#     puts "this is second block"
+# end
+# call_twice{
+#     puts "this is the new twice statement"
+# }
+
+a = [1,2,3,5,5,3,2,7]
+hash = Hash.new{0}
+a.each do |ele|
+    hash[ele] += 1
+end 
+p hash
+# b = a.group_by(&:itself).transform_values(&:count)
+# p b

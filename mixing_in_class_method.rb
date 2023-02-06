@@ -13,12 +13,12 @@ end
 
 
 class MyClass
-    # include MyLib
-    extend ClassMethods
+    include MyLib
+    # extend ClassMethods
 end
    # MyLib is being included in MyClass!
 # p MyClass.ancestors
-obj = MyClass.new 
-obj.class_method
-# MyClass.class_method
+# obj = MyClass.new 
+# obj.class_method
+MyClass.class_method
    # This method was first defined in MyLib::ClassMethods
