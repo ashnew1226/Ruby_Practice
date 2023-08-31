@@ -85,9 +85,52 @@
 # The Proc respond immediatly so it does not return control to calling method 
 #  The lambada returns the result and get control back to calling method
 
-square = Proc.new {|x| x**2 }
+# square = Proc.new {|x| x**2 }
 
 # square.call(3)  #=> 9
 # # shorthands:
 # square.(3)      #=> 9
-p square[3]  
+# p square[3]  
+
+# double_it = lambda { |num| num * 2 }
+
+# triple_it = lambda { |num| num * 3 }
+
+
+# def apply_lambda(lmbda, number)
+
+#   puts lmbda.call(number)
+
+# end
+
+
+
+# apply_lambda(double_it, 10)
+
+# apply_lambda(triple_it, 20)
+add_2 = lambda{|x| x+2}
+mul_2 = ->(x){x*2}
+def lamda_and_proc_demo(lambda,num)
+  # proc_demo = Proc.new{return "this is proc method."}
+  # puts "inside proc"
+  # proc_demo.call
+  # puts "this is after proc"
+  # proc_demo = lambda{return "this is proc method."}
+  puts lambda.call(num)
+
+end
+lamda_and_proc_demo(add_2,10)
+lamda_and_proc_demo(mul_2,10)
+
+# we can pass lambda as function argument
+class Ashish
+  def b
+    puts "inside b"
+  end
+  def a(b)
+  puts "inside a"
+  end
+end
+
+ash = Ashish.new
+ash.a
