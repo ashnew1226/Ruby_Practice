@@ -20,3 +20,17 @@ numbers.map do |ele|
 end
 p new_arr
 
+# newly added selection sort algorithm 
+arr = [7,4,2,6,1]
+n = arr.length
+(0...n-1).each do|i|
+    puts "element #{i}"
+    min = i
+    (i+1...n).each do|j|
+        min = j if arr[j] < arr[min]
+    end
+    if min != i
+        arr[i],arr[min] = arr[min],arr[i]     
+    end
+end
+print arr
